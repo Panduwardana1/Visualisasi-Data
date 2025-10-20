@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tampilan Chart Statistik</title>
+    <script type="module" crossorigin src="/assets/index-1CxT2oE0.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B_9ChGvq.css">
+  </head>
+  <body>
+    <main class="chart-page">
+      <section class="chart-card">
+        <header class="chart-card__header">
+          <div>
+            <h1>Aktivitas Chat</h1>
+            <p class="chart-subtitle">
+              Rekap jumlah pesan masuk dan keluar sepanjang hari.
+            </p>
+          </div>
+          <div class="chart-actions">
+            <label for="chartType" class="chart-label">Jenis Chart</label>
+            <select id="chartType" class="chart-select">
+              <option value="line">Line</option>
+              <option value="bar">Bar</option>
+              <option value="radar">Radar</option>
+              <option value="doughnut">Doughnut</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="chart-container">
+          <canvas id="chatChart"></canvas>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
